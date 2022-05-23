@@ -1,0 +1,382 @@
+/*reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*estilos de body*/
+
+body{
+    background-color: rgba(245, 218, 227, 1);
+}
+
+/*Estilos de título principal*/
+
+div ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    font-size: 25px;
+}
+
+
+/*estilos del menú*/
+
+nav{
+    background-color: rgba(253, 239, 244, 0.6);
+    text-decoration: none;
+    padding: 10px;
+    margin: 0px;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    font-family: 'Nunito';
+    font-weight: bolder;
+    font-size: 20px;
+    margin: 5px;
+    margin-left: 15px;
+    position: relative;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:black;
+}
+
+.menu ul li:hover{
+    background-color: rgb(235, 203, 214);
+}
+
+.menu{
+    font-family: 'Nunito';
+}
+
+
+/*estilos submenu*/
+
+.subMenu{
+    list-style-type: none;
+    background-color: #FDEFF4;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu ul ul{
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.menu ul li:hover > ul{
+    display: block;
+}
+
+/*cuerpo*/
+
+.menuHide{
+    display: none;
+}
+
+.cuerpo{
+    margin: 10px;
+    padding: 10px;
+    background-image: url("../img/pexels-henry-&-co-1939485.jpg");
+    background-repeat:no-repeat;
+    border: 5px solid;
+}
+
+main div h2{
+    color:#794d29;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 50px;
+    font-family:'Nunito';
+}
+
+main div p{
+    color:#9e612f;
+    text-align:center;
+    font-weight: bold;
+    font-family: 'Nunito';
+    margin-top: 20px;
+    margin-left: 5px;
+    padding: 10px;
+}
+
+.contenedor{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-areas: "hijo1 hijo2" 
+                         "hijo3 hijo4"
+                         "hijo5 hijo6"
+                         "hijo7 hijo8";
+    width: 100%;
+    justify-items: center;
+}
+
+.hijo1{
+    grid-area: hijo1;
+}
+
+.hijo2{
+    grid-area: hijo2;
+}
+
+.hijo3{
+    grid-area: hijo3;
+}
+
+.hijo4{
+    grid-area: hijo4;
+}
+
+.hijo5{
+    grid-area: hijo5;
+}
+
+.hijo6{
+    grid-area: hijo6;
+}
+
+.hijo7{
+    grid-area: hijo7;
+}
+
+.hijo8{
+    grid-area: hijo8;
+}
+
+.listado{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.emprendimiento{
+    text-align: center;
+    font-family: 'Nunito';
+    font-weight: bold;
+}
+
+.emprendimiento:hover{
+    background-color: #FDEFF4;
+    font-size: larger;
+}
+
+.linkages{
+    text-decoration: none;
+    font-family: 'Nunito';
+    color: black;
+}
+
+/*estilos footer*/
+
+.sobre{
+    text-align: right;
+    margin-top: 40px;
+    margin-right: 20px;
+    justify-items: left;
+}
+
+.contacto{
+    text-decoration: none;
+}
+
+footer p{
+    margin-top: 40px;
+    font-family: 'Nunito';
+    text-align: center;
+}
+
+
+/*Nosotros*/
+
+.nosotros{
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.nosotrosCuerpo{
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 10px;
+}
+
+.gente{
+    margin-top: 10px;
+    width: 40%;
+    display: none;
+}
+
+.texto{
+    font-family: 'Nunito';
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*Emprendimiento individual*/
+
+.individual{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    padding: 20px;
+    border-radius: 600px;
+}
+
+.redes{
+    display: inline-block;
+    width: 40px;
+    margin-left: 30px;
+}
+
+.info{
+    margin: 30px;
+    font-family: 'Nunito';
+    font-weight:bold;
+}
+
+.textoRedes{
+    font-family: 'Nunito';
+    font-weight: bold;
+}
+
+/*estilos categorías*/
+
+.categories{
+    text-decoration: none;
+    font-family: 'Nunito';
+    margin-left: 30px;
+}
+
+.textito{
+    display: none;
+}
+
+.categories{
+    margin: 20px;
+    display: grid;
+    grid-template-areas: "listCateg listCateg"
+                         "listCateg listCateg"
+                         "listCateg listCateg"
+                         "listCateg listCateg"
+                         "listCateg listCateg"
+                         "listCateg listCateg"
+                         "listCateg listCateg"
+                         "listCateg listCateg";
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.listCateg{
+    grid-area: listCateg;
+}
+
+.listCateg{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    padding: 20px;
+}
+
+/*estilos de contacto*/
+
+.tituloCaja{
+    font-family: 'Nunito';
+    font-weight: bold;
+}
+
+
+.caja{
+    margin-left: 40px;
+    margin-right: 80px;
+    display: flex;
+    flex-direction: column;
+    background-color: #c7718f;
+}
+
+
+/*media Queries*/
+
+@media screen and (min-width:600px) {
+    .menuHide{
+        display: block;
+    }
+ 
+    .contenedor{
+        grid-template-areas: "hijo1 hijo2 hijo3"
+                             "hijo4 hijo5 hijo6"
+                             "hijo7 hijo8 hijo9";
+    }
+
+    .textito{
+        display: block;
+    }
+
+    .categories{
+        grid-template-areas: "listCateg listCateg listCateg"
+                             "listCateg listCateg listCateg"
+                             "listCateg listCateg listCateg"
+                             "listCateg listCateg listCateg"
+                             "listCateg listCateg listCateg";
+    }
+
+    .gente{
+        margin-left: 40px;
+        width: 500px;
+        display: block;
+    }
+
+    .imgNosotros{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+    .menuHide{
+        display: block;
+    }
+ 
+    .contenedor{
+        grid-template-areas: "hijo1 hijo2 hijo3 hijo4"
+                             "hijo5 hijo6 hijo7 hijo8";
+    }
+
+    .textito{
+        display: block;
+    }
+
+    .categories{
+        grid-template-areas: "listCateg listCateg listCateg listCateg listCateg     listCateg"
+                             "listCateg listCateg listCateg listCateg listCateg listCateg"
+                             "listCateg listCateg listCateg listCateg listCateg listCateg"
+                             "listCateg listCateg listCateg listCateg listCateg listCateg"
+                             "listCateg listCateg listCateg listCateg listCateg listCateg";
+    }
+
+    .gente{
+        margin-left: 40px;
+        width: 500px;
+        display: block;
+    }
+
+    .imgNosotros{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
